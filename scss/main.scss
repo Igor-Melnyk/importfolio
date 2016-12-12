@@ -47,7 +47,7 @@ header {
 			font-size: 20px;
 			text-decoration: none;
 			span {
-				color: $hover-color; 
+				color: $hover-color;
 			}
 		}
 	}
@@ -81,7 +81,7 @@ header {
 .about {
 	.avatar {
 		float: left;
-		max-width: 366px;
+		max-width: 150px;
 		margin-right: 25px;
 		img {
 			width: 100%
@@ -114,11 +114,11 @@ header {
 				transform: scale(1.1);
 			}
 		}
-		
+
 	}
 }
 footer {
-	padding: 300px 0 50px 0;
+	padding: 200px 0 50px 0;
 	background: #000 url(../img/footer-bg3.jpg) no-repeat;
 	background-size: cover;
 	.bottom-navigation {
@@ -144,7 +144,7 @@ footer {
 @media only screen and (max-width: 768px){
 	header {
 		.top-header {
-			
+
 			.menu-btn {
 				display: inline-block;
 			}
@@ -174,12 +174,18 @@ footer {
 							}
 						}
 				}
-			}	
-		}	
+			}
+		}
 	}
 	.top-picture {
 		height: 500px;
 	}
+    .about {
+        .avatar {
+            max-width: 100px;
+        }
+    }
+
 	footer {
 		padding-top: 70px;
 	}
@@ -194,7 +200,7 @@ footer {
 			margin: 0;
 			margin-bottom: 20px;
 		}
-	}	
+	}
 }
 @media only screen and (max-width: 480px){
 	.top-picture {

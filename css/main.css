@@ -66,7 +66,7 @@ header .bottom-header {
 
 .about .avatar {
   float: left;
-  max-width: 366px;
+  max-width: 150px;
   margin-right: 25px; }
   .about .avatar img {
     width: 100%; }
@@ -91,7 +91,7 @@ header .bottom-header {
         transform: scale(1.1); }
 
 footer {
-  padding: 300px 0 50px 0;
+  padding: 200px 0 50px 0;
   background: #000 url(../img/footer-bg3.jpg) no-repeat;
   background-size: cover; }
   footer .bottom-navigation {
@@ -135,6 +135,9 @@ footer {
 
   .top-picture {
     height: 500px; }
+
+  .about .avatar {
+    max-width: 100px; }
 
   footer {
     padding-top: 70px; } }
