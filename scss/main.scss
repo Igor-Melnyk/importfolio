@@ -111,7 +111,8 @@ header {
 				max-height: 300px;
 			}
 			a:hover {
-				transform: scale(1.1);
+                transform: scale(1.1);
+                z-index: 4;
 			}
 		}
 
@@ -143,6 +144,9 @@ footer {
 }
 @media only screen and (max-width: 768px){
 	header {
+        position: fixed;
+        z-index: 5;
+        width: 100%;
 		.top-header {
 
 			.menu-btn {

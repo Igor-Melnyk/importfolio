@@ -88,7 +88,8 @@ header .bottom-header {
         max-width: 360px;
         max-height: 300px; }
       .portfolio .works .item a:hover {
-        transform: scale(1.1); }
+        transform: scale(1.1);
+        z-index: 4; }
 
 footer {
   padding: 200px 0 50px 0;
@@ -111,27 +112,31 @@ footer {
     color: #fff; }
 
 @media only screen and (max-width: 768px) {
-  header .top-header .menu-btn {
-    display: inline-block; }
-  header .top-header .logo {
-    margin-left: 40px; }
-  header .bottom-header .wrapper {
-    padding: 0; }
-    header .bottom-header .wrapper .top-navigation {
-      display: none;
-      position: absolute;
-      width: 100%;
-      background: #fff; }
-      header .bottom-header .wrapper .top-navigation ul {
-        padding: 0;
-        text-align: center; }
-        header .bottom-header .wrapper .top-navigation ul li {
-          float: none;
-          margin: 0;
-          border-bottom: 1px solid #000; }
-          header .bottom-header .wrapper .top-navigation ul li a {
-            display: inline-block;
-            padding: 10px; }
+  header {
+    position: fixed;
+    z-index: 5;
+    width: 100%; }
+    header .top-header .menu-btn {
+      display: inline-block; }
+    header .top-header .logo {
+      margin-left: 40px; }
+    header .bottom-header .wrapper {
+      padding: 0; }
+      header .bottom-header .wrapper .top-navigation {
+        display: none;
+        position: absolute;
+        width: 100%;
+        background: #fff; }
+        header .bottom-header .wrapper .top-navigation ul {
+          padding: 0;
+          text-align: center; }
+          header .bottom-header .wrapper .top-navigation ul li {
+            float: none;
+            margin: 0;
+            border-bottom: 1px solid #000; }
+            header .bottom-header .wrapper .top-navigation ul li a {
+              display: inline-block;
+              padding: 10px; }
 
   .top-picture {
     height: 500px; }
