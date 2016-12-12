@@ -72,11 +72,13 @@ header {
 	height: 453px;
 }
 .about {
-	img {
-		display: inline-block;
+	.avatar {
 		float: left;
 		max-width: 366px;
 		margin-right: 25px;
+		img {
+			width: 100%
+		}
 	}
 	.about-content {
 
@@ -86,11 +88,25 @@ header {
 .portfolio{
 	background: #eeeeee;
 	.works {
+		margin-top: 25px;
 		.item {
-			padding: 0;
-			margin: 0;
+			margin-bottom: 25px;
 			text-align: center;
+			transition: all 0.3s;
+			img {
+				width: 100%
+			}
+			a {
+				display: inline-block;
+				overflow: hidden;
+				transition: transform, 0.3s;
+				max-height: 320px;
+			}
+			a:hover {
+				transform: scale(1.1);
+			}
 		}
+		
 	}
 }
 footer {

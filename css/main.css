@@ -59,18 +59,30 @@ header .bottom-header {
   background-size: cover;
   height: 453px; }
 
-.about img {
-  display: inline-block;
+.about .avatar {
   float: left;
   max-width: 366px;
   margin-right: 25px; }
+  .about .avatar img {
+    width: 100%; }
 
 .portfolio {
   background: #eeeeee; }
-  .portfolio .works .item {
-    padding: 0;
-    margin: 0;
-    text-align: center; }
+  .portfolio .works {
+    margin-top: 25px; }
+    .portfolio .works .item {
+      margin-bottom: 25px;
+      text-align: center;
+      transition: all 0.3s; }
+      .portfolio .works .item img {
+        width: 100%; }
+      .portfolio .works .item a {
+        display: inline-block;
+        overflow: hidden;
+        transition: transform, 0.3s;
+        max-height: 320px; }
+      .portfolio .works .item a:hover {
+        transform: scale(1.1); }
 
 footer {
   height: 300px;
