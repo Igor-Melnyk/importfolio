@@ -55,7 +55,7 @@ header .bottom-header {
         color: #00bac6; }
 
 .top-picture {
-  background: url(../img/pic/banner2.gif);
+  background: url(../img/pic/banner2.gif) no-repeat center;
   background-size: cover;
   height: 453px; }
 
@@ -80,13 +80,14 @@ header .bottom-header {
         display: inline-block;
         overflow: hidden;
         transition: transform, 0.3s;
-        max-height: 320px; }
+        max-width: 360px;
+        max-height: 300px; }
       .portfolio .works .item a:hover {
         transform: scale(1.1); }
 
 footer {
   height: 300px;
-  background: url(../img/footer-bg2.jpg);
+  background: url(../img/footer-bg3.jpg);
   background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
