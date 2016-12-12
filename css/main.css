@@ -31,6 +31,10 @@ li {
 
 header .top-header {
   background: #252323; }
+  header .top-header .menu-btn {
+    display: none;
+    color: #fff;
+    font-size: 20px; }
   header .top-header .logo {
     display: inline-block;
     margin: 10px 0;
@@ -42,22 +46,23 @@ header .top-header {
       color: #00bac6; }
 header .bottom-header {
   background: #fff; }
-  header .bottom-header .top-nav ul {
+  header .bottom-header .top-navigation ul {
     padding: 35px; }
-    header .bottom-header .top-nav ul li {
+    header .bottom-header .top-navigation ul li {
       float: left;
       margin-right: 25px; }
-      header .bottom-header .top-nav ul li a {
+      header .bottom-header .top-navigation ul li a {
         text-decoration: none;
         color: #8b8b8b;
-        text-transform: uppercase; }
-      header .bottom-header .top-nav ul li a:hover {
+        text-transform: uppercase;
+        font-size: 20px; }
+      header .bottom-header .top-navigation ul li a:hover {
         color: #00bac6; }
 
 .top-picture {
   background: url(../img/pic/banner2.gif) no-repeat center;
   background-size: cover;
-  height: 453px; }
+  height: 600px; }
 
 .about .avatar {
   float: left;
@@ -86,8 +91,64 @@ header .bottom-header {
         transform: scale(1.1); }
 
 footer {
-  height: 300px;
-  background: url(../img/footer-bg3.jpg);
+  padding: 300px 0 50px 0;
+  background: #000 url(../img/footer-bg3.jpg) no-repeat;
   background-size: cover; }
+  footer .bottom-navigation {
+    float: left;
+    margin-left: 15%; }
+    footer .bottom-navigation a {
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 20px; }
+    footer .bottom-navigation a:hover {
+      color: #00bac6; }
+  footer .contacts {
+    float: right;
+    margin-right: 15%;
+    color: #fff; }
+
+@media only screen and (max-width: 768px) {
+  header .top-header .menu-btn {
+    display: inline-block; }
+  header .top-header .logo {
+    margin-left: 50px; }
+  header .bottom-header .wrapper {
+    padding: 0; }
+    header .bottom-header .wrapper .top-navigation {
+      display: none;
+      position: absolute;
+      width: 100%;
+      background: #fff; }
+      header .bottom-header .wrapper .top-navigation ul {
+        padding: 0;
+        text-align: center; }
+        header .bottom-header .wrapper .top-navigation ul li {
+          float: none;
+          margin: 0;
+          border-bottom: 1px solid #000; }
+          header .bottom-header .wrapper .top-navigation ul li a {
+            display: inline-block;
+            padding: 10px; }
+
+  .top-picture {
+    height: 500px; }
+
+  footer {
+    padding-top: 70px; } }
+@media only screen and (max-width: 600px) {
+  footer {
+    padding-top: 50px; }
+    footer .bottom-navigation, footer .contacts {
+      display: block;
+      float: none;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 20px; } }
+@media only screen and (max-width: 480px) {
+  .top-picture {
+    height: 400px; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,5 @@
 $hover-color: #00bac6;
+$nav-font-size: 20px;
 body {
 	padding: 0;
 	margin: 0;
@@ -33,6 +34,11 @@ li {
 header {
 	.top-header {
 		background: #252323;
+		.menu-btn {
+			display: none;
+			color: #fff;
+			font-size: 20px;
+		}
 		.logo {
 			display: inline-block;
 			margin: 10px 0;
@@ -47,7 +53,7 @@ header {
 	}
 	.bottom-header {
 		background: #fff;
-		.top-nav{
+		.top-navigation{
 			ul {
 				padding: 35px;
 				li{
@@ -57,6 +63,7 @@ header {
 						text-decoration: none;
 						color: #8b8b8b;
 						text-transform: uppercase;
+						font-size: $nav-font-size;
 					}
 					a:hover {
 						color: $hover-color;
@@ -69,7 +76,7 @@ header {
 .top-picture {
 	background: url(../img/pic/banner2.gif) no-repeat center;
 	background-size: cover;
-	height: 453px;
+	height: 600px;
 }
 .about {
 	.avatar {
@@ -111,7 +118,86 @@ header {
 	}
 }
 footer {
-	height: 300px;
-	background: url(../img/footer-bg3.jpg);
+	padding: 300px 0 50px 0;
+	background: #000 url(../img/footer-bg3.jpg) no-repeat;
 	background-size: cover;
+	.bottom-navigation {
+		float: left;
+		margin-left: 15%;
+		a {
+			display: inline-block;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: $nav-font-size;
+		}
+		a:hover {
+				color: $hover-color;
+			}
+	}
+	.contacts {
+		float: right;
+		margin-right: 15%;
+		color: #fff;
+	}
+}
+@media only screen and (max-width: 768px){
+	header {
+		.top-header {
+			
+			.menu-btn {
+				display: inline-block;
+			}
+			.logo {
+				margin-left: 50px;
+			}
+		}
+		.bottom-header {
+			.wrapper {
+				padding: 0;
+				.top-navigation {
+						display: none;
+						position: absolute;
+						width: 100%;
+						background: #fff;
+						ul {
+							padding: 0;
+							text-align: center;
+							li {
+								float: none;
+								margin: 0;
+								border-bottom: 1px solid #000;
+								a {
+									display: inline-block;
+									padding: 10px;
+								}
+							}
+						}
+				}
+			}	
+		}	
+	}
+	.top-picture {
+		height: 500px;
+	}
+	footer {
+		padding-top: 70px;
+	}
+}
+@media only screen and (max-width: 600px){
+	footer {
+		padding-top: 50px;
+		.bottom-navigation, .contacts {
+			display: block;
+			float: none;
+			text-align: center;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+	}	
+}
+@media only screen and (max-width: 480px){
+	.top-picture {
+		height: 400px;
+	}
 }
