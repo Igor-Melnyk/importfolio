@@ -79,6 +79,9 @@ header {
 	height: 600px;
 }
 .about {
+	h1 {
+		display: none;
+	}
 	.avatar {
 		float: left;
 		max-width: 150px;
@@ -91,8 +94,10 @@ header {
 
 	}
 }
-
 .portfolio{
+	h1 {
+		display: none;
+	}
 	background: #eeeeee;
 	.works {
 		margin-top: 25px;
@@ -118,6 +123,7 @@ header {
 
 	}
 }
+
 footer {
 	padding: 200px 0 50px 0;
 	background: #000 url(../img/footer-bg3.jpg) no-repeat;
