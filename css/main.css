@@ -114,6 +114,7 @@ footer {
 @media only screen and (max-width: 768px) {
   header {
     position: fixed;
+    margin-top: -35px;
     z-index: 5;
     width: 100%; }
     header .top-header .menu-btn {
@@ -139,6 +140,7 @@ footer {
               padding: 10px; }
 
   .top-picture {
+    margin-top: 35px;
     height: 500px; }
 
   .about .avatar {

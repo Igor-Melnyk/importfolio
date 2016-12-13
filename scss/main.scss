@@ -145,6 +145,7 @@ footer {
 @media only screen and (max-width: 768px){
 	header {
         position: fixed;
+        margin-top: -35px;
         z-index: 5;
         width: 100%;
 		.top-header {
@@ -182,6 +183,7 @@ footer {
 		}
 	}
 	.top-picture {
+		margin-top: 35px;
 		height: 500px;
 	}
     .about {
