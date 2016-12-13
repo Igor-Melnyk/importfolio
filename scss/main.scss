@@ -16,6 +16,9 @@ ul {
 li {
 	list-style: none;
 }
+h1, h2 {
+		display: none;
+	}
 .clr {
 	clear: both;
 }
@@ -79,9 +82,6 @@ header {
 	height: 600px;
 }
 .about {
-	h1 {
-		display: none;
-	}
 	.avatar {
 		float: left;
 		max-width: 150px;
@@ -95,9 +95,6 @@ header {
 	}
 }
 .portfolio{
-	h1 {
-		display: none;
-	}
 	background: #eeeeee;
 	.works {
 		margin-top: 25px;

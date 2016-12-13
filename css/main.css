@@ -14,6 +14,9 @@ ul {
 li {
   list-style: none; }
 
+h1, h2 {
+  display: none; }
+
 .clr {
   clear: both; }
 
@@ -64,8 +67,6 @@ header .bottom-header {
   background-size: cover;
   height: 600px; }
 
-.about h1 {
-  display: none; }
 .about .avatar {
   float: left;
   max-width: 150px;
@@ -75,8 +76,6 @@ header .bottom-header {
 
 .portfolio {
   background: #eeeeee; }
-  .portfolio h1 {
-    display: none; }
   .portfolio .works {
     margin-top: 25px; }
     .portfolio .works .item {
