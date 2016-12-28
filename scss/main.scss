@@ -91,7 +91,12 @@ header {
 		}
 	}
 	.about-content {
-
+		p {
+			span {
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+		}
 	}
 }
 .portfolio{
@@ -102,15 +107,15 @@ header {
 			margin-bottom: 25px;
 			text-align: center;
 			transition: all 0.3s;
-			img {
-				width: 100%
-			}
 			a {
 				display: inline-block;
 				overflow: hidden;
 				transition: transform, 0.3s;
 				max-width: 360px;
 				max-height: 300px;
+				img {
+					width: 100%
+				}
 			}
 			a:hover {
                 transform: scale(1.1);
