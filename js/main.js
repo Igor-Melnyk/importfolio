@@ -6,6 +6,9 @@ $('document').ready ( function (){
 			$('.top-navigation').slideUp(200);
 		}
 	});
+	$('.top-navigation a').click(function () {
+		$('.top-navigation').slideUp(200);
+	});
 	$('a[href*="#"]').click(function(){
 		var el = $(this).attr('href');
 		$('body').animate({
