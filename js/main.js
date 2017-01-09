@@ -1,13 +1,14 @@
 $('document').ready ( function (){
 	$('.menu-btn').click(function () {
-		if ($('.top-navigation').css('display') == 'none') {
-			$('.top-navigation').slideDown(200);
+		var top_nav = $('.top-navigation');
+		if ($(top_nav).css('display') == 'none') {
+			$(top_nav).slideDown(200);
+			$('.top-navigation a').click(function () {
+				$(top_nav).slideUp(200);
+			});
 		} else {
-			$('.top-navigation').slideUp(200);
+			$(top_nav).slideUp(200);
 		}
-	});
-	$('.top-navigation a').click(function () {
-		$('.top-navigation').slideUp(200);
 	});
 	$('a[href*="#"]').click(function(){
 		var el = $(this).attr('href');
